@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    position: fixed;
+    /* border: 2px solid red; */
+    top: 0;
+    background-color: #EEEEEE;
+}
+
+#header-imgs{
+    flex-grow: 3;
+    /* border: 2px solid red; */
+}
+
+#logo{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#header-imgs img{
+    width: 100%;
+}
+
+#nav-bar{
+    font-size: .7rem;
+    /* border: 2px solid red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+    flex-grow: 1;
+}
+
+#nav-bar a{
+    color: black;
+}
+
+h3{
+    text-align: center;
+    margin-top: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#email {
+    display: block;
+    margin: 10px auto;
+}
+
+::placeholder{
+    font-size: .7rem;
+}
+
+#submit{
+    background-color: #FF8C00;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: .7rem;
+    font-weight: 800;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #c77005;
+}
+
+#features{
+    width: 65%;
+    margin: 40px auto;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    align-items: center;
+    margin: 50px auto;
+}
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.icon{
+    font-size: 2rem;
+    /* border: 2px solid red; */
+}
+
+.info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .6rem;
+}
+
+.video{
+    width: fit-content;
+    margin: 40px auto;
+}
+
+#pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 700px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+#price-card{
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+}
+
+h6{
+    text-align: center;
+    padding: 7px;
+    background-color: #cecccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+}
+
+.text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .7rem;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#price-card button{
+    background-color: #FF8C00;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: .7rem;
+    display: block;
+    margin: 30px auto 10px;
+    cursor: pointer;
+}
+
+#price-card button:hover{
+    background-color: #c77005;
+}
+
+footer{
+    max-width: 720px;
+    width: 95%;
+    background-color: #cecccc;
+    margin: auto;
+    padding: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#footer-link{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+#footer-link a{
+    font-size: .7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    font-size: .6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #505050;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+@media screen and (max-width: 580px) {
+    #pricing{
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        width: 95%;
+    }
+
+    #features{
+        width: 95%;
+    }
+
+    #header{
+    padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #header{
+        flex-direction: column;
+    }
+
+    #nav-bar{
+        flex-direction: column;
+    }
+
+    .feature{
+        grid-template-columns: 1fr;
+    }
+
+    h3{
+        margin-top: 90px;
+    }
+}
